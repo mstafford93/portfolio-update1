@@ -1,0 +1,114 @@
+/*add google fonts*/
+
+/*Set all*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    /*font-size: 60%;*/
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.75rem;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+#logo{
+    font-size: 1.5em;
+    color: #f6f6f6;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar li{
+    display: inline-flex;
+    color: #f6f6f6;
+}
+
+.navbar a{
+    color: #f6f6f6;
+    position: relative;
+    margin-left: 2em;/*might need to change for responsive*/
+}
+
+/*Creates underline*/
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s; /*Transitions line in when hovering*/
+}
+
+/*Activates Underline when hovering*/
+.navbar a:hover::before{
+    width: 100%;
+}
+
+#menu-icon{
+    font-size: 3rem;
+    color: #f6f6f6;
+    display: none;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 4rem;
+}
+
+#home-content h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#home-content p{
+    font-size: 1.5rem;
+}
+
+.home-image img{
+    height: auto;
+    width: auto;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+}
