@@ -220,9 +220,26 @@ button:hover{
     margin-top: 5rem;
     display: flex;
     justify-content: flex-start;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 #skills i{
     margin-left: 5rem;
+    font-size: 5rem;
+}
+
+#contact{
+    background-color: rgb(1, 1, 43);
+    color: #f6f6f6;
+}
+
+#contact .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.buttons button{
+    margin-left: 2rem;
 }
