@@ -205,3 +205,24 @@ button a{
 button:hover{
     background-color: #2b0691;
 }
+
+#skills{
+    background-color: rgb(2, 2, 65);
+    color: #f6f6f6;
+}
+
+#skills h3{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+
+#skills .images{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 5rem;
+}
+
+#skills i{
+    margin-left: 5rem;
+}
