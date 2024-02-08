@@ -129,7 +129,8 @@ span{
 }
 
 .about-image{
-    width: 50%;
+    height: auto;
+    width: auto;
 } 
 
 .heading{
@@ -242,4 +243,109 @@ button:hover{
 
 .buttons button{
     margin-left: 2rem;
+}
+
+/*Responive part*/
+
+@media (max-width: 1200px){
+    html{
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 70;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: #3c0372;
+        border-top: 0.1rem solid #4400ff;
+        display: none;
+        color: #2b0691;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home-content h3{
+        font-size: 2.5rem;
+    }
+
+    #home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-image{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+    #about-me{
+        flex-direction: column;
+    }
+
+    .about-image img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+    #projects .project{
+        height: 240px;
+    }
+
+    #projects .project p{
+        display: none;
+    }
+
+
+}
+
+    section{
+        padding: 10rem 3%;
+    }
+
+    #contact{
+        min-height: auto;
+    }
+}
+
+@media (max-width: 617px){
+    .home-image img{
+        width: 80vw;
+        margin-top: 8rem;
+    }
+
+    #about{
+        display: block;
+    }
+
+    .about-image{
+        width: 100vw;
+        margin-top: 4rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 60%;
+    }
 }
